@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultimate Code Learning Platform</title>
+<link rel="stylesheet" href="ai.css">
+<link href="ai.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- LOGIN FORM -->
+<div class="login-container" id="loginContainer">
+  <div class="login-box">
+    <h2>Login</h2>
+    <form id="loginForm" onsubmit="login(event)">
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" id="username" placeholder="Username" required>
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" id="password" placeholder="Password" required>
+      </div>
+      <button type="submit">Login</button>
+      <p id="loginError" class="error-message"></p>
+    </form>
+    <p>Demo: user / password</p>
+  </div>
+</div>
+
+<!-- CODING PLATFORM -->
+<div id="platform" style="display:none;">
+  <header>
+    Ultimate Code Learning Platform
+    <div class="theme-toggle">
+      <i id="darkBtn" class="fas fa-moon" title="Dark Mode" onclick="setDarkMode()"></i>
+      <i id="lightBtn" class="fas fa-sun" title="Light Mode" onclick="setLightMode()"></i>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="lesson">
+      <h2>Lesson 1: Print Numbers</h2>
+      <p>Write a program that prints numbers from 1 to 10 using a loop.</p>
+    </div>
+
+    <select id="languageSelect">
+      <option value="javascript">JavaScript</option>
+      <option value="python">Python</option>
+    </select>
+
+    <div class="editor-container" id="editor"></div>
+    <button class="btn-run" onclick="runCode()">Run Code</button>
+    <div class="output" id="output"></div>
+
+    <div class="gamification">
+      <div>Points: <span id="points">0</span></div>
+      <div>Badges: <span class="badge" id="badge">None</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- Monaco Editor -->
+<script src="ai.js"></script>
+<!-- Skulpt for Python -->
+<script src="ai.js"></script>
+<script src="ai.js"></script>
+
+<script src="ai.js"></script>
+</body>
+</html>
